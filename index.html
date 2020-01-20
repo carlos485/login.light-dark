@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="container" class="container light1">
+    <div class="center">
+        <input type="checkbox" onclick="oscuro()" 
+        class="custom-control-input" id="customCheck1">
+    </div>
+    <div id="form" class="form light1">
+        <h2 id="title" class="title tl">Login</h2>
+        <div class="input">
+            <div id="inputBox" class="inputBox light1">
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" id="usuario" placeholder="example@gmail.com">
+            </div>
+            <div id="inputBox2" class="inputBox light1">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="contraseña" id="contraseña" placeholder="******">
+            </div>
+            <div id="inputBox3" class="inputBox light1">
+                <input type="submit" value="Ingresar">
+            </div>
+        </div>
+        <p class="forget">¿Olvidaste tu contraseña? <a href="#">Click Aqui</a></p>        
+    </div>
+</div>    
+</body>
+</html>
+
+<script>
+function oscuro(){
+    var check = document.getElementById("customCheck1");
+    if(check.checked == true){
+    document.getElementById("container").classList.remove("light1");
+    document.getElementById("form").classList.remove("light1");
+    document.getElementById("inputBox").classList.remove("light1");
+    document.getElementById("inputBox2").classList.remove("light1");
+    document.getElementById("inputBox3").classList.remove("light1");
+    document.getElementById("title").classList.remove("tl");
+    } 
+    if(check.checked == false){
+    document.getElementById("container").classList.add("light1");
+    document.getElementById("form").classList.add("light1");
+    document.getElementById("inputBox").classList.add("light1");
+    document.getElementById("inputBox2").classList.add("light1");
+    document.getElementById("inputBox3").classList.add("light1");
+    document.getElementById("title").classList.add("tl"); 
+    }
+    
+}
+</script>
