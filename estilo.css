@@ -81,8 +81,6 @@
 }
 .light1{
     background: #ebf5fc;
-    box-shadow: -5px -5px 15px rgba(255,255,255,0.8),
-                5px 5px 10px rgba(0,0,0,0.1);
 }
 .light2 {
     background: #ebf5fc;
@@ -95,9 +93,15 @@
                 inset 2px 2px 6px rgba(0,0,0,0.1);
     color: #32a3b1;
 }
-.form .input .inputBox.light1 input:active{
-    box-shadow: -2px -2px 6px rgba(255,255,255,1)
-                2px 2px 6px rgba(0,0,0,0.1);
+.form .input .inputBox.light1 input[type="submit"] {
+    background: #ebf5fc;
+    box-shadow: -5px -5px 15px rgba(255,255,255,0.8),
+                5px 5px 10px rgba(0,0,0,0.1);
+    color: #32a3b1;
+}
+.form .input .inputBox.light1 input[type="submit"]:active{
+    box-shadow: inset -2px -2px 6px rgba(255,255,255,1),
+                inset 2px 2px 6px rgba(0,0,0,0.1);
 }
 .form .input .inputBox.light1 input::placeholder{
     color: #bdcada;
